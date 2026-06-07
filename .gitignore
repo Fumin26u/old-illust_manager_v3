@@ -1,0 +1,51 @@
+.DS_Store
+node_modules
+/dist
+.VSCodeCounter/*
+.VSCodeCounter/
+lbpcascade_animeface.xml
+cmd.md
+memo.md
+.env
+api/db/sql/*
+docker-compose.yaml
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# common
+api/**/*images*/*
+api/**/chromedriver.exe
+api/**/*.txt
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+pixiv_auth.py
+
+# Secrets (Twitter API keys / login password - never commit)
+apiKey.php
+twitterPassword.py
+api/imagedler/twitter/apiKey.php
+api/imagedler/twitter/twitterPassword.py
+api/config/*.py
+!api/config/*.template.py
+api/deepdanbooru/*
+api/request/*

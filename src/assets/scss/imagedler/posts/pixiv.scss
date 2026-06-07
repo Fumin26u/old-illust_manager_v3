@@ -1,0 +1,21 @@
+@import '../main.scss';
+.post-list .pixiv {
+    .post-info {
+        > .post-text {
+            height: 26px;
+            overflow-y: auto;
+            border-bottom: 1px dashed $border-color;
+        }
+
+        > .post-image {
+            display: block;
+            height: 54px;
+            overflow-y: auto;
+        }
+        > .post-image input,
+        > .post-image label {
+            @include horizontalAlign();
+            cursor: pointer;
+        }
+    }
+}

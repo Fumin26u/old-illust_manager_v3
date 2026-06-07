@@ -1,0 +1,80 @@
+@import '../style.scss';
+
+#page-image-manager {
+    margin: 1em auto;
+}
+
+.btn-common {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1em;
+}
+
+.section-import-image {
+    .v-card-import-image {
+        width: 40%;
+    }
+}
+
+.image-management {
+    display: flex;
+
+    .image-list {
+        border-right: 2px dashed $border-color;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 auto;
+        max-height: 600px;
+        overflow-y: auto;
+
+        > div.v-card {
+            transition: opacity 0.2s ease-in-out;
+            cursor: pointer;
+            width: 30%;
+            margin: 1em 8px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            > dt, > dd {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .img-text {
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+    }
+
+    .image-detail {
+        width: 36%;
+        margin: 0 1em;
+
+        div > li.tags {
+            display: block;
+        }
+
+        div.add-tag {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1em 0;
+
+            .btn-add-tag {
+                width: 20%;
+                margin-left: 8px;
+            }
+        }
+
+        div.tag-list {
+            max-height: 280px;
+            overflow-y: auto;
+        }
+    }
+}
